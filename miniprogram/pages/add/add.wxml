@@ -1,0 +1,13 @@
+<view class="container">
+  <button type="warn" bindtap="upload">点击此处上传图片</button>
+
+  <view class="photoBox">
+    <text>已上传图片历史记录</text>
+     <view>
+      <block wx:for="{{historyPhotos}}" wx:key="index" wx:for-item="item">
+        <image src="{{item.photoUrl}}" mode="aspectFit"></image>
+      </block>
+    </view>
+  </view>
+
+</view>

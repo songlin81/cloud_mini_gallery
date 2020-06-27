@@ -1,0 +1,7 @@
+<image src="{{photo.photoUrl}}" mode="widthFix"></image>
+
+<view>
+  <button type="primary" plain bindtap="downloadPhoto">下载到本地</button>
+  <button type="primary" plain open-type="share">分享给好友</button>
+  <button type="primary" plain bindtap="previewPhoto">全屏预览</button>
+</view>

@@ -1,0 +1,5 @@
+.floatBtn{
+  position: fixed;
+  top: 50rpx;
+  right: 50rpx;
+}

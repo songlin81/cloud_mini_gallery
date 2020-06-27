@@ -1,0 +1,14 @@
+.avatarBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100rpx;
+}
+.avatarBox image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.avatarBox text{
+  margin: 30rpx 0;
+}

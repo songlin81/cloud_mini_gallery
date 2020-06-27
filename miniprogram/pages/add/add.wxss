@@ -1,0 +1,14 @@
+.photoBox{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.photoBox text{
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.photoBox image{
+  width: 250rpx;
+  height: 250rpx;
+  float: left;
+}

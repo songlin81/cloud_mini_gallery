@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="card" wx:for="{{photoList}}" wx:key="index">
+    <view class="card-head">
+      <navigator url="../homepage/homepage?id={{item._openid}}">
+        <image class="avatar" src="{{item.avatarUrl}}" mode="widthFix"></image>
+      </navigator>
+      <view class="title">
+        <text class="nickName">{{item.nickName}}</text>
+        <text class="address">{{item.province}},{{item.country}}</text>
+      </view>
+    </view>
+    <view class="card-body">
+      <navigator url="../detail/detail?id={{item._id}}">
+        <image src="{{item.photoUrl}}" mode="widthFix"></image>
+      </navigator>
+    </view>
+    <view class="card-foot">
+      <text>{{item.addDate}}</text>
+    </view>
+  </view>
+
+  <view class="floatBtn">
+    <button type="primary" size="mini" open-type="getUserInfo" bindgetuserinfo="clickGetUserInfo" bindtap="goToAdd">上传图片</button>
+  </view>
+</view>

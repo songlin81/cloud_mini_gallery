@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="avatarBox">
+    <image src="{{photoList[0].avatarUrl}}"></image>
+    <text>{{photoList[0].nickName}}个人主页</text>
+  </view>
+
+  <view class="card" wx:for="{{photoList}}" wx:key="index">
+    <view class="card-head">
+      <image class="avatar" src="{{item.avatarUrl}}" mode="widthFix"></image>
+      <view class="title">
+        <text class="nickName">{{item.nickName}}</text>
+        <text class="address">{{item.province}},{{item.country}}</text>
+      </view>
+    </view>
+    <view class="card-body">
+      <navigator url="../detail/detail?id={{item._id}}">
+        <image src="{{item.photoUrl}}" mode="widthFix"></image>
+      </navigator>
+    </view>
+    <view class="card-foot">
+      <text>{{item.addDate}}</text>
+    </view>
+  </view>
+</view>
